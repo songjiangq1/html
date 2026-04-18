@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', 'Roboto', '微软雅黑', sans-serif;
+    background-color: #f5f7fa;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+}
+.fixed_ads {
+    position: fixed;
+    padding: 20px;
+    bottom: 100px;
+    right: 2px;
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+    background-color: hwb(117 6% 7%);
+    color: #f50404;
+}
+.head {
+    background-color: #126d2a;
+    color: hsl(0, 0%, 99%);
+    min-width: 100%;
+}
+.head ul{
+    display: flex;
+    gap: 20%;
+    text-decoration: none;
+    list-style: none;
+    min-width: 100%;
+}
+.left ul li{
+    margin-bottom: 50px;
+}
+.head ul li a{
+    color: #f5f7fa;
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.left {
+    float: left;
+    width: 3%;
+    background: #40a30a;
+    min-height: 100vh;
+}
+.left ul {
+    padding: 10%;
+    text-decoration: none;
+    list-style: none;
+}
+.left ul li a {
+    color: #f5f7fa;
+    text-decoration: none;
+}
+.mid {
+    float: left;
+    width: 80%;
+    background: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+.right {
+    float: left;
+    width: 17%;
+    background: #40a30a;
+    min-height: 100vh;
+    padding: 20px;
+}
+.book_grid {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.book_card {
+    z-index: 666;
+    position: relative;
+    width: 200px;
+    height: 210px;
+    background-color: #f5f7fa;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0202023e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.book_card:hover .mask {
+    opacity: 1;
+}
+.right_ads_card1 {
+    position: relative;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    width: 100%;
+    height: 68%;
+    cursor: pointer;
+}
+.right_ads_card2 {
+    position: relative;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    width: 100%;
+    height: 30%;
+    margin-top: 4%;
+    cursor: pointer;
+
+}
+.right_ads_card2:hover .mask {
+    opacity: 1;
+}
+.right_ads_card1:hover .mask {
+    opacity: 1;
+}
